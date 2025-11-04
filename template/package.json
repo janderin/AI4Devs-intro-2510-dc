@@ -1,0 +1,13 @@
+{
+  "name": "reverse-string",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^8.20.0",
+    "@testing-library/user-event": "^14.4.3",
+    "jest": "^29.7.0"
+  }
+}
