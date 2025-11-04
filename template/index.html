@@ -1,11 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reverse String</title>    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reverse String</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      height: 100vh;
+      background: #f9fafb;
+      padding-top: 60px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #111827;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      width: 90%;
+      max-width: 600px;
+    }
+
+    input {
+      width: 100%;
+      padding: 16px;
+      font-size: 1.1rem;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      outline: none;
+    }
+
+    input:focus {
+      border-color: #2563eb;
+      box-shadow: 0 0 0 3px #bfdbfe;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    button {
+      background-color: #2563eb;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: background 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #1e40af;
+    }
+
+    button.secondary {
+      background-color: #4b5563;
+    }
+
+    button.secondary:hover {
+      background-color: #374151;
+    }
+
+    .output {
+      font-size: 1.3rem;
+      color: #111827;
+      margin-top: 20px;
+      min-height: 1.5em;
+      word-break: break-all;
+    }
+  </style>
 </head>
 <body>
-<script src="script.js"></script>
+  <h1>Reverse String</h1>
+  <div class="container">
+    <input id="inputText" type="text" placeholder="Escribe un texto...">
+    <div class="buttons">
+      <button id="reverseBtn"><i class="fa-solid fa-rotate"></i> Reverse</button>
+      <button id="copyBtn" class="secondary"><i class="fa-solid fa-clipboard"></i> Copy</button>
+    </div>
+    <div id="output" class="output"></div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
